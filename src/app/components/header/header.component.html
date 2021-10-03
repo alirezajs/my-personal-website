@@ -1,0 +1,16 @@
+<header class="header" [ngClass]="{'open': menuOpen } ">
+    <div class="overlay has-fade" [ngClass]="{'fade-in': menuOpen, 'fade-out' : !menuOpen }"></div>
+    <nav class="container container--pall flex flex-jc-sb flex-ai-c">
+
+      <div class="header__toggle hide-for-desktop" (click)="menuOpen=!menuOpen" >
+          <span></span><span></span><span></span>
+      </div>
+
+      <div class="header__links hide-for-mobile" >
+          <app-nav-bar></app-nav-bar>
+      </div>
+    </nav>
+    <div class="header__menu has-fade" [ngClass]="{'fade-in': menuOpen, 'fade-out' : !menuOpen }">
+        <app-nav-bar></app-nav-bar>
+      </div>
+</header>
