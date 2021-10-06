@@ -1,0 +1,93 @@
+.my-slider{
+    height:500px;
+    width: 100%;
+    background: rgb(0,0,0);
+    // background: linear-gradient(90deg,  rgba(233,233,233,1) 0%, rgba(0,0,0,1) 100%);
+    // background: linear-gradient(90deg, rgba(131,123,123,1) 0%, rgba(18,17,17,1) 52%, rgba(9,9,9,1) 100%);
+
+    overflow: hidden;
+ img {
+    top: -80px;
+    right: 26px;
+    width: 450px;
+ }
+ .text{
+     top:80px;
+     left:15%;
+
+     .my-name{
+         color:#fff;
+         font-size: 180%;
+         margin-bottom: 1rem;
+     }
+ }
+
+  .line {
+    color:#fff;
+    position: relative;
+    top: 50%;
+    border-right: 2px solid transparent;
+    font-size: 180%;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+}
+
+/*Animation*/
+
+.anim-typewriter {
+    animation: typewriter 4s steps(40) 5s 1 normal both,
+    blinkTextCursor 500ms steps(40) 5s infinite normal;
+}
+.anim-typewriter2 {
+    animation: typewriter2 4s steps(40) 1s 1 normal both,
+    blinkTextCursor2 500ms steps(40) 10 normal both,
+    blinkTextCursor3 500ms 5s 1 normal,
+}
+
+@keyframes typewriter {
+    from {
+          width: 0;
+    }
+    to {
+          width: 14.8em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+          border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+          border-right-color: transparent;
+    }
+}
+@keyframes typewriter2 {
+    from {
+          width: 0;
+    }
+    to {
+          width: 11.8em;
+    }
+}
+
+@keyframes blinkTextCursor2 {
+    from {
+          border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+          border-right-color: transparent;
+    }
+   
+}
+@keyframes blinkTextCursor3 {
+    0% {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    100% {
+        border:none;   
+    }
+}
+
+
+}

@@ -36,7 +36,13 @@
         position: relative;
         background-color: $white;
         padding:1.0625rem;
-        
+        .nav-bar-menu {
+           a {
+             img {
+              vertical-align: middle;
+             }
+           }
+        }
     }
 
 
@@ -84,12 +90,12 @@
             transition: color 300ms ease-out;
 
             &:not(:last-child){
-                margin-right: 32px;
+                margin-right: 170px;
               }
 
 
               &:not(:last-child){
-                margin-right: 32px;
+                margin-right: 170px;
               }
         
               &::before {

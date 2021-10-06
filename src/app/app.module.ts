@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { HeaderComponent } from './components/header/header.component';
+import { MySliderComponent } from './components/my-slider/my-slider.component';
 
 
 
@@ -13,6 +14,7 @@ import { HeaderComponent } from './components/header/header.component';
     AppComponent,
     NavBarComponent,
     HeaderComponent,
+    MySliderComponent,
   ],
   imports: [
     BrowserModule,
